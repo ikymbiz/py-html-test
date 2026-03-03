@@ -3,15 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>スマホ実行テスト</title>
     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 </head>
-<body>
-    <h1>スマホでPythonテスト</h1>
-    
-    <script type="py">
-        print("おめでとうございます！")
-        print("ブラウザでPythonが動いています。")
+<body style="background-color: #f0f0f0; padding: 20px;">
+    <h1>Python実行テスト</h1>
+    <p>下に黒い画面（ターミナル）が出れば成功です。</p>
+
+    <script type="py" terminal>
+print("--- 実行開始 ---")
+import sys
+print(f"Pythonバージョン: {sys.version}")
+print("スマホでPythonが動いています！")
     </script>
+
 </body>
 </html>
